@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <giga j:dependencies="bootstrap3-components bootstrap3-core default search"
+            j:installedModules="giga"
+            j:modulePriority="0"
+            j:moduleType="templatesSet"
+            j:title="giga"
+            jcr:mixinTypes="jmix:hasExternalProviderExtension"
+            jcr:primaryType="jnt:module">
+                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-giga-1.0-SNAPSHOT">
+                    <src jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                 jcr:primaryType="jnt:folder">
+                        <main jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                     jcr:primaryType="jnt:folder">
+                            <resources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                             jcr:primaryType="jnt:folder">
+                                <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                   jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                                        <template.giga.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_template>
+                            </resources>
+                        </main>
+                    </src>
+                </sources>
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder">
+                        <themes jcr:primaryType="jnt:folder">
+                            <default jcr:primaryType="jnt:folder"/>
+                        </themes>
+                    </files>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                    <base j:theme="#/modules/giga/templates/files/themes/default"
+                  j:view="giga"
+                  jcr:mixinTypes="jmix:theme"
+                  jcr:primaryType="jnt:template">
+                        <home jcr:primaryType="jnt:pageTemplate">
+                            <content jcr:primaryType="jnt:contentList">
+                                <main columnsType="predefinedColumns"
+                           grid="12"
+                           gridLayout="fixed-width"
+                           jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createRow bootstrap3mix:predefinedColumns"
+                           jcr:primaryType="bootstrap3nt:columns"/>
+                            </content>
+                        </home>
+                        <simple jcr:primaryType="jnt:pageTemplate"/>
+                        <pagecontent jcr:primaryType="jnt:contentList">
+                            <top columnsType="nogrid"
+                       gridLayout="fixed-width"
+                       jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createSection"
+                       jcr:primaryType="bootstrap3nt:columns"
+                       sectionCssClass="top"
+                       sectionElement="div">
+                                <top jcr:primaryType="jnt:contentList">
+                                    <simple-search-form jcr:primaryType="jnt:simpleSearchForm"
+                                            result="#/modules/giga/home/search-results"/>
+                                </top>
+                            </top>
+                            <header columnsType="nogrid"
+                          jcr:mixinTypes="bootstrap3mix:createSection"
+                          jcr:primaryType="bootstrap3nt:columns"
+                          sectionCssClass="header"
+                          sectionElement="div">
+                                <header jcr:primaryType="jnt:contentList">
+                                    <navigation-menu jcr:mixinTypes="bootstrap3mix:navbarAdvanced"
+                                         jcr:primaryType="bootstrap3nt:navbar"
+                                         navbarClass="navbar navbar-default navbar-static-top"
+                                         ulClass="nav navbar-nav navbar-right"/>
+                                </header>
+                            </header>
+                            <breadcrumb columnsType="nogrid"
+                              gridLayout="fixed-width"
+                              jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createSection"
+                              jcr:primaryType="bootstrap3nt:columns"
+                              sectionCssClass="breadcrumbs bottom-margin-40"
+                              sectionElement="div">
+                                <breadcrumb jcr:primaryType="jnt:contentList">
+                                    <breadcrumb cssClass="pull-left"
+                                    jcr:mixinTypes="bootstrap3mix:advancedBreadcrumb"
+                                    jcr:primaryType="bootstrap3nt:breadcrumb"/>
+                                </breadcrumb>
+                            </breadcrumb>
+                            <content jcr:primaryType="jnt:area"/>
+                            <footer columnsType="predefinedColumns"
+                          grid="4_4_4"
+                          gridLayout="fixed-width"
+                          jcr:mixinTypes="bootstrap3mix:createAbsoluteAreas bootstrap3mix:createContainer bootstrap3mix:createRow bootstrap3mix:createSection bootstrap3mix:predefinedColumns"
+                          jcr:primaryType="bootstrap3nt:columns"
+                          level="0"
+                          sectionCssClass="footer"
+                          sectionElement="div"/>
+                            <copyright columnsType="predefinedColumns"
+                             grid="6_6"
+                             gridLayout="fixed-width"
+                             jcr:mixinTypes="bootstrap3mix:createAbsoluteAreas bootstrap3mix:createContainer bootstrap3mix:createRow bootstrap3mix:createSection bootstrap3mix:predefinedColumns"
+                             jcr:primaryType="bootstrap3nt:columns"
+                             level="0"
+                             sectionCssClass="copyright"
+                             sectionElement="div"/>
+                        </pagecontent>
+                        <_x0032_cols-3l-9r j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="2cols-3L-9R"/>
+                            <content jcr:primaryType="jnt:contentList">
+                                <main columnsType="predefinedColumns"
+                           grid="3_9"
+                           gridLayout="fixed-width"
+                           jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createRow bootstrap3mix:predefinedColumns"
+                           jcr:primaryType="bootstrap3nt:columns"/>
+                            </content>
+                        </_x0032_cols-3l-9r>
+                        <_x0032_cols-9l-3r j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="2cols-9L-3R"/>
+                            <content jcr:primaryType="jnt:contentList">
+                                <main columnsType="predefinedColumns"
+                           grid="9_3"
+                           gridLayout="fixed-width"
+                           jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createRow bootstrap3mix:predefinedColumns"
+                           jcr:primaryType="bootstrap3nt:columns"/>
+                            </content>
+                        </_x0032_cols-9l-3r>
+                        <app j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="app"/>
+                            <content jcr:primaryType="jnt:contentList">
+                                <main columnsType="customColumns"
+                           gridClasses="col-md-7, col-md-5"
+                           gridLayout="fixed-width"
+                           jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createRow bootstrap3mix:customColumns"
+                           jcr:primaryType="bootstrap3nt:columns"/>
+                            </content>
+                        </app>
+                        <apps j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="apps"/>
+                            <content jcr:primaryType="jnt:contentList">
+                                <main columnsType="predefinedColumns"
+                           grid="3_3_3_3"
+                           gridLayout="fixed-width"
+                           jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createRow bootstrap3mix:predefinedColumns"
+                           jcr:primaryType="bootstrap3nt:columns"/>
+                            </content>
+                        </apps>
+                    </base>
+                    <content-template j:applyOn="jnt:content"
+                              j:hiddenTemplate="true"
+                              j:priority="1"
+                              j:view="giga"
+                              jcr:primaryType="jnt:contentTemplate">
+                        <pagecontent jcr:primaryType="jnt:contentList">
+                            <main-resource-display j:mainResourceView="default" jcr:primaryType="jnt:mainResourceDisplay"/>
+                        </pagecontent>
+                    </content-template>
+                </templates>
+                
+                <home j:isHomePage="true"
+               j:templateName="home"
+               jcr:mixinTypes="jdmix:hidePage"
+               jcr:primaryType="jnt:page">
+                    <j:translation_en jcr:language="en"
+                              jcr:mixinTypes="mix:title"
+                              jcr:primaryType="jnt:translation"
+                              jcr:title="Home"/>
+                    <search-results j:templateName="simple"
+                            jcr:mixinTypes="jdmix:hidePage"
+                            jcr:primaryType="jnt:page">
+                        <j:translation_en jcr:language="en"
+                                 jcr:mixinTypes="mix:title"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="Search Results"/>
+                        <content jcr:primaryType="jnt:contentList">
+                            <search-results autoSuggest="true"
+                                  autoSuggestHitCount="2"
+                                  autoSuggestMaxTermCount="1"
+                                  autoSuggestMinimumHitCount="2"
+                                  jcr:primaryType="jnt:searchResults">
+                                <j:translation_en jcr:language="en"
+                                       jcr:mixinTypes="mix:title"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="Search Results"/>
+                            </search-results>
+                        </content>
+                    </search-results>
+                </home>
+            </giga>
+    </modules>
+</content>
