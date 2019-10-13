@@ -8,13 +8,13 @@
             j:title="giga"
             jcr:mixinTypes="jmix:hasExternalProviderExtension"
             jcr:primaryType="jnt:module">
-                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
                   jcr:primaryType="jnt:moduleVersionFolder"
                   j:staticMountPointProviderKey="module-giga-1.0-SNAPSHOT">
-                    <pom.xml jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:xmlFile"/>
-                    <src jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                    <pom.xml jcr:primaryType="jnt:xmlFile"/>
+                    <src jcr:mixinTypes="jmix:hasExternalProviderExtension"
                  jcr:primaryType="jnt:folder">
-                        <main jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                        <main jcr:mixinTypes="jmix:hasExternalProviderExtension"
                      jcr:primaryType="jnt:folder">
                             <resources jcr:mixinTypes="jmix:hasExternalProviderExtension"
                              jcr:primaryType="jnt:folder">
