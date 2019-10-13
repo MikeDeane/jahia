@@ -59,8 +59,8 @@
   <name>giga</name>
   <description>This is the custom profile module (giga) for running on a Digital Experience Manager server.</description>
   <scm>
-    <connection>scm:git:git@github.com/MikeDeane/jahia.git</connection>
-    <developerConnection>scm:git:git@github.com/MikeDeane/jahia.git</developerConnection>
+    <connection>scm:git:https://github.com/MikeDeane/jahia.git</connection>
+    <developerConnection>scm:git:https://github.com/MikeDeane/jahia.git</developerConnection>
   </scm>
   <properties>
     <jahia-depends>bootstrap3-components,bootstrap3-core,default,search</jahia-depends>
