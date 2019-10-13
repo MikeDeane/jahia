@@ -26,9 +26,12 @@
     <template:addResources type="css" resources="portfolio-v1.css" />
     <template:addResources type="css" resources="responsive.css" />
     <template:addResources type="css" resources="screen.css" />
-  
-  <link rel="shortcut icon" href="${url.currentModule}img/favicon.ico">
+  	<template:addResources type="css" resources="hrMkt.css" />
+  	<template:addResources type="css" resources="bootstrap.css" />
+    
 
+  	<!-- Favicon -->
+  	<link rel="shortcut icon" href="${url.context}${url.currentModule}/img/favicon/favicon.ico" type="image/x-icon">
   
 </head>
 
