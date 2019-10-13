@@ -18,9 +18,9 @@
                      jcr:primaryType="jnt:folder">
                             <resources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                              jcr:primaryType="jnt:folder">
-                                <css jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                                <css jcr:mixinTypes="jmix:hasExternalProviderExtension"
                           jcr:primaryType="jnt:cssFolder">
-                                    <hrMkt.css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFile"/>
+                                    <hrMkt.css jcr:primaryType="jnt:cssFile"/>
                                 </css>
                                 <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                                    jcr:primaryType="jnt:nodeTypeFolder">
@@ -29,10 +29,9 @@
                                         <template.giga.jsp jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:viewFile"/>
                                     </html>
                                 </jnt_template>
-                                <META-INF jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                                <META-INF jcr:mixinTypes="jmix:hasExternalProviderExtension"
                                jcr:primaryType="jnt:metaInfFolder">
-                                    <definitions.cnd jcr:mixinTypes="jmix:sourceControl"
-                                         jcr:primaryType="jnt:definitionFile"/>
+                                    <definitions.cnd jcr:primaryType="jnt:definitionFile"/>
                                 </META-INF>
                             </resources>
                         </main>
