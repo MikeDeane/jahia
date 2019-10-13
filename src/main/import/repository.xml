@@ -22,11 +22,18 @@
                           jcr:primaryType="jnt:cssFolder">
                                     <hrMkt.css jcr:primaryType="jnt:cssFile"/>
                                 </css>
-                                <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
-                                   jcr:primaryType="jnt:nodeTypeFolder">
+                                <jnt_searchResults jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                                        jcr:primaryType="jnt:nodeTypeFolder">
                                     <html jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                               jcr:primaryType="jnt:templateTypeFolder">
-                                        <template.giga.jsp jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:viewFile"/>
+                                        <searchHit.jspf jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:editableFile"/>
+                                    </html>
+                                </jnt_searchResults>
+                                <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                   jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                                        <template.giga.jsp jcr:primaryType="jnt:viewFile"/>
                                     </html>
                                 </jnt_template>
                                 <META-INF jcr:mixinTypes="jmix:hasExternalProviderExtension"
@@ -246,29 +253,14 @@
                                   autoSuggestHitCount="2"
                                   autoSuggestMaxTermCount="1"
                                   autoSuggestMinimumHitCount="2"
-                                  jcr:primaryType="jnt:searchResults"/>
-                        </pagecontent>
-                    </search-results>
-                    <results-search j:templateName="2cols-9l-3r"
-                            jcr:mixinTypes="jdmix:hidePage"
-                            jcr:primaryType="jnt:page">
-                        <j:translation_en jcr:language="en"
-                                 jcr:mixinTypes="mix:title"
-                                 jcr:primaryType="jnt:translation"
-                                 jcr:title="results-search"/>
-                        <pagecontent jcr:primaryType="jnt:contentList">
-                            <results-search autoSuggest="true"
-                                  autoSuggestHitCount="2"
-                                  autoSuggestMaxTermCount="1"
-                                  autoSuggestMinimumHitCount="2"
                                   jcr:primaryType="jnt:searchResults">
                                 <j:translation_en jcr:language="en"
                                        jcr:mixinTypes="mix:title"
                                        jcr:primaryType="jnt:translation"
-                                       jcr:title="results-search"/>
-                            </results-search>
+                                       jcr:title="search-results"/>
+                            </search-results>
                         </pagecontent>
-                    </results-search>
+                    </search-results>
                 </home>
             </giga>
     </modules>
