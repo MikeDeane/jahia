@@ -22,19 +22,19 @@
                           jcr:primaryType="jnt:cssFolder">
                                     <hrMkt.css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFile"/>
                                 </css>
-                                <jnt_searchResults jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                                <jnt_searchResults jcr:mixinTypes="jmix:hasExternalProviderExtension"
                                         jcr:primaryType="jnt:nodeTypeFolder">
-                                    <html jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                                    <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
                               jcr:primaryType="jnt:templateTypeFolder">
                                         <searchHit.jspf jcr:primaryType="jnt:editableFile"/>
-                                        <searchResults.jsp jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:viewFile"/>
+                                        <searchResults.jsp jcr:primaryType="jnt:viewFile"/>
                                     </html>
                                 </jnt_searchResults>
-                                <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                                <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension"
                                    jcr:primaryType="jnt:nodeTypeFolder">
-                                    <html jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                                    <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
                               jcr:primaryType="jnt:templateTypeFolder">
-                                        <template.giga.jsp jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:viewFile"/>
+                                        <template.giga.jsp jcr:primaryType="jnt:viewFile"/>
                                     </html>
                                 </jnt_template>
                                 <META-INF jcr:mixinTypes="jmix:hasExternalProviderExtension"
@@ -105,9 +105,10 @@
                                     jcr:primaryType="bootstrap3nt:breadcrumb"/>
                                 </breadcrumb>
                             </breadcrumb>
-                            <search columnsType="nogrid"
+                            <search columnsType="predefinedColumns"
+                          grid="12"
                           gridLayout="fixed-width"
-                          jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createSection"
+                          jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createSection bootstrap3mix:predefinedColumns"
                           jcr:primaryType="bootstrap3nt:columns"
                           sectionCssClass="search"
                           sectionElement="div">
@@ -115,6 +116,10 @@
                                     <simple-search-form jcr:primaryType="jnt:simpleSearchForm"
                                             result="#/modules/giga/home/search-results"/>
                                 </search>
+                                <search-main jcr:primaryType="jnt:contentList">
+                                    <simple-search-form jcr:primaryType="jnt:simpleSearchForm"
+                                            result="#/modules/giga/home/search-results"/>
+                                </search-main>
                             </search>
                             <landing columnsType="nogrid" jcr:primaryType="bootstrap3nt:columns"/>
                             <pagecontent columnsType="nogrid" jcr:primaryType="bootstrap3nt:columns"/>
