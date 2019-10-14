@@ -1,6 +1,8 @@
 .search {
-  margin: auto;
-  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
   padding: 10px;
   border: none;
 }
@@ -8,3 +10,4 @@
 .simplesearchform {
   border: none;
 }
+
