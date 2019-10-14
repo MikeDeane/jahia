@@ -27,9 +27,6 @@
 
   	<title>HOMERUN</title>
 
-  	<!-- hrMkt CSS -->  
-  	<template:addResources type="css" resources="hrMkt.css" />
-
   	<!-- gigacaster CSS -->  
     <template:addResources type="css" resources="flexslider.css" />
     <template:addResources type="css" resources="font-awesome.css" />
@@ -41,6 +38,9 @@
   
   	<!-- bootstrap CSS -->
   	<template:addResources type="css" resources="bootstrap.css" />
+  
+    <!-- hrMkt CSS -->  
+  	<template:addResources type="css" resources="hrMkt.css" />
     
 
   	<!-- Favicon -->

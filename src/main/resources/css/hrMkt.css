@@ -2,4 +2,9 @@
   float: right;
   width: 300px;
   padding: 10px;
+  border: none;
+}
+
+.simplesearchform {
+  border: none;
 }
