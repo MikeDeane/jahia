@@ -202,6 +202,12 @@
                            jcr:primaryType="bootstrap3nt:columns"/>
                             </content>
                         </_x0033_cols-4-4-4>
+                        <gitaddexample j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="gitaddexample"/>
+                        </gitaddexample>
                     </base>
                     <content-template j:applyOn="jnt:content"
                               j:hiddenTemplate="true"
